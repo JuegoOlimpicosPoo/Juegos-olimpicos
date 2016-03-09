@@ -9,8 +9,25 @@ package juegosolimpicos;
  *
  * @author David
  */
-public class Delegacion {
+import java.util.*;
 
+public class Delegacion {
+    
+    
+    private String Pais;
+    private int numDeportistas;
+    private int medOro;
+    private int medPlata;
+    private int medBronce;
+
+    public Delegacion(String Pais, int numDeportistas, int medOro, int medPlata, int medBronce) {
+        this.Pais = Pais;
+        this.numDeportistas = numDeportistas;
+        this.medOro = medOro;
+        this.medPlata = medPlata;
+        this.medBronce = medBronce;
+    }
+    
     public String getPais() {
         return Pais;
     }
@@ -50,10 +67,6 @@ public class Delegacion {
     public void setMedBronce(int medBronce) {
         this.medBronce = medBronce;
     }
-    private String Pais;
-    private int numDeportistas;
-    private int medOro;
-    private int medPlata;
-    private int medBronce;
+    
     
 }
